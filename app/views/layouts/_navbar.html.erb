@@ -9,7 +9,8 @@
       <li class="nav-item">
       <% if logged_in? %>
       <%= link_to 'Logout', logout_path, method: :delete %>
-      <%= link_to  '新規タスクの投稿', new_task_path, :class=>"btn btn-primary" %>
+      <%= link_to 'タスク一覧', tasks_path, :class=>"btn btn-info" %>
+      <%= link_to '新規タスクの投稿', new_task_path, :class=>"btn btn-primary" %>
       <% else %>
       
       
